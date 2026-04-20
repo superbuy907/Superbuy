@@ -7,7 +7,7 @@
 * **Szolgáltatások:** DNS, HTTP, DHCP és AAA (RADIUS) központi címtár.
 * **Automatizáció:** Python alapú eszközkonfiguráció.
 
-##**A hálózat felépítése**
+***A hálózat felépítése***
 
 
 
