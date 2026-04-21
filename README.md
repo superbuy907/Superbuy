@@ -23,11 +23,11 @@ Ez a tároló tartalmazza az **Superbuy** projekt teljes technikai dokumentáci�
 ---
 
 ## 🛠️ Alkalmazott Technológiák
-- **HA (High Availability):** HSRP (Hot Standby Router Protocol)
-- **Routing:** OSPFv2 (Open Shortest Path First)
-- **VPN:** GRE (Generic Routing Encapsulation) Site-to-Site Tunnelek
+- **HA (High Availability):**
+- **Routing:** OSPFv2
+- **VPN:** GRE  Site-to-Site Tunnelek
 - **Biztonság:** Cisco ASA tűzfal, ACL szűrés
-- **Automatizáció:** Python szkriptek a menedzsmenthez
+- **Automatizáció:** ![**Ansible**](https://github.com/superbuy907/Superbuy/blob/main/K%C3%A9perny%C5%91k%C3%A9p%202026-04-20%2011-11-34.png?raw=true)szkriptek a menedzsmenthez
 ---
 *Készült a hálózati szakmai vizsgához - 2026*
 
