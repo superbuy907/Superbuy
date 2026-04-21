@@ -1,0 +1,190 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Kp
+!
+!
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+!
+!
+!
+no ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+username admin secret 5 $1$mERr$2cEEsFL7M9sRqGuVqIrgK1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Tunnel0
+ ip address 10.255.255.1 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 10.0.0.9
+!
+!
+interface Tunnel1
+ ip address 10.255.255.5 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 10.0.0.5
+!
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/0.10
+ encapsulation dot1Q 10
+ ip address 10.10.10.66 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ ipv6 address 2001:DB8:1:10::1/64
+ ipv6 ospf 1 area 0
+ standby 10 ip 10.10.10.65
+ standby 10 priority 110
+ standby 10 preempt
+!
+interface GigabitEthernet0/0/0.20
+ encapsulation dot1Q 20
+ ip address 10.10.10.3 255.255.255.192
+ ip helper-address 192.168.100.10
+ ip nat inside
+ ipv6 address 2001:DB8:1:20::1/64
+ ipv6 ospf 1 area 0
+ standby 20 ip 10.10.10.2
+ standby 20 priority 110
+ standby 20 preempt
+!
+interface GigabitEthernet0/0/0.30
+ encapsulation dot1Q 30
+ ip address 10.10.10.98 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ ipv6 address 2001:DB8:1:30::1/64
+ ipv6 ospf 1 area 0
+ standby 30 ip 10.10.10.97
+ standby 30 priority 110
+ standby 30 preempt
+!
+interface GigabitEthernet0/0/0.40
+ encapsulation dot1Q 40
+ ip address 10.10.10.130 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ ipv6 address 2001:DB8:1:40::1/64
+ ipv6 ospf 1 area 0
+ standby 40 ip 10.10.10.129
+ standby 40 priority 110
+ standby 40 preempt
+!
+interface GigabitEthernet0/0/0.50
+ no ip address
+ ip nat inside
+ ipv6 address 2001:DB8:1:50::1/64
+ ipv6 ospf 1 area 0
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:1:100::1/64
+ ipv6 ospf 1 area 0
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ ip address 10.0.0.1 255.255.255.252
+ ip nat outside
+ ipv6 address 2001:DB8:A:1::1/64
+ ipv6 ospf 1 area 0
+!
+interface Serial0/1/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ redistribute static subnets 
+ network 10.10.10.0 0.0.0.255 area 0
+ network 10.0.0.0 0.0.0.3 area 0
+ default-information originate
+!
+router rip
+!
+ipv6 router ospf 1
+ router-id 1.1.1.1
+ log-adjacency-changes
+!
+ip nat inside source static 192.168.100.10 200.0.0.10 
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.0.0.2 
+ip route 192.168.100.0 255.255.255.0 10.10.10.62 
+ip route 178.20.10.0 255.255.255.240 10.255.255.2 
+ip route 192.168.1.0 255.255.255.0 10.255.255.6 
+!
+ip flow-export version 9
+!
+!
+access-list 10 permit 192.168.1.0 0.0.0.255
+access-list 10 permit 10.10.10.0 0.0.0.255
+!
+!
+!
+!
+!
+line con 0
+ login local
+!
+line aux 0
+!
+line vty 0 4
+ access-class 10 in
+ password cisco
+ login local
+line vty 5 15
+ access-class 10 in
+ password cisco
+ login local
+!
+!
+!
+end
+

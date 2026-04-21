@@ -1,0 +1,165 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Kp_Backup
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username admin secret 5 $1$mERr$2cEEsFL7M9sRqGuVqIrgK1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Tunnel0
+ ip address 10.255.255.14 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 10.0.0.5
+!
+!
+interface Tunnel1
+ ip address 10.255.255.18 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/0
+ tunnel destination 10.0.0.9
+!
+!
+interface GigabitEthernet0/0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/0.10
+ encapsulation dot1Q 10
+ ip address 10.10.10.67 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ standby 10 ip 10.10.10.65
+ standby 10 preempt
+!
+interface GigabitEthernet0/0/0.20
+ encapsulation dot1Q 20
+ ip address 10.10.10.4 255.255.255.192
+ ip helper-address 192.168.100.10
+ ip nat inside
+ standby 20 ip 10.10.10.2
+ standby 20 preempt
+!
+interface GigabitEthernet0/0/0.30
+ encapsulation dot1Q 30
+ ip address 10.10.10.99 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ standby 30 ip 10.10.10.97
+ standby 30 preempt
+!
+interface GigabitEthernet0/0/0.40
+ encapsulation dot1Q 40
+ ip address 10.10.10.131 255.255.255.224
+ ip helper-address 192.168.100.10
+ ip nat inside
+ standby 40 ip 10.10.10.129
+ standby 40 preempt
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ ip address 10.0.0.14 255.255.255.252
+ ip nat outside
+!
+interface Serial0/1/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/2/0
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/2/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ network 10.10.10.0 0.0.0.255 area 0
+ network 10.0.0.0 0.0.0.3 area 0
+ network 10.255.255.12 0.0.0.3 area 0
+ network 10.255.255.16 0.0.0.3 area 0
+ default-information originate
+!
+ip nat inside source static 192.168.100.10 200.0.0.10 
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.0.0.13 
+ip route 192.168.100.0 255.255.255.0 10.10.10.62 
+!
+ip flow-export version 9
+!
+!
+access-list 10 permit 192.168.1.0 0.0.0.255
+access-list 10 permit 10.10.10.0 0.0.0.255
+!
+!
+!
+!
+!
+line con 0
+ login local
+!
+line aux 0
+!
+line vty 0 4
+ access-class 10 in
+ login local
+line vty 5 15
+ access-class 10 in
+ login local
+!
+!
+!
+end
+
