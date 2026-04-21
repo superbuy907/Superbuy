@@ -16,7 +16,7 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 | 🏗️ | **Packet Tracer Lab** | [Letöltés (.pkt)](./project/maov5.pkt) |
 | 📊 | **IP Címzési Terv** | [Megnyitás Google Sheets-ben](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing) |
 | 📜 | **Műszaki Dokumentáció** | [DOKUMENTACIO.md megtekintése](./docs/DOKUMENTACIO.md) |
-| 🤖 | **Ansible Útmutató** | [Letöltés (.docx)](./Ansible_Dokumentacio.docx) |
+| 🤖 | **Ansible Útmutató** | [Letöltés (.docx)](./docs/Ansible_Dokumentacio.docx) |
 
 ---
 
