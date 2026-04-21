@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/badge/Version-v6.2-blue?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Project-Network--Infrastucture-orange?style=for-the-badge)
 
-Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartalmazza. A hálózatot magas rendelkezésre állásra (HA), biztonságra és automatizált menedzsmentre terveztük.
+Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartalmazza. A hálózatot magas rendelkezésre állásra, biztonságra és automatizált menedzsmentre terveztük.
 
 ---
 
