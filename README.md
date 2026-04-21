@@ -28,9 +28,6 @@ Ez a tároló tartalmazza az **Superbuy** projekt teljes technikai dokumentáci�
 - **VPN:** GRE (Generic Routing Encapsulation) Site-to-Site Tunnelek
 - **Biztonság:** Cisco ASA tűzfal, ACL szűrés
 - **Automatizáció:** Python szkriptek a menedzsmenthez
-
-![**Logikai Topológia**](https://github.com/superbuy907/Superbuy/blob/main/K%C3%A9perny%C5%91k%C3%A9p%202026-04-20%2011-11-34.png?raw=true)
-
 ---
 *Készült a hálózati szakmai vizsgához - 2026*
 
