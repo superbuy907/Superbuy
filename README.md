@@ -1,36 +1,51 @@
-# Superbuy - Vállalati Hálózati Infrastruktúra
+# 🍏 Superbuy - Vállalati Hálózati Infrastruktúra
 
-Ez a tároló tartalmazza az **Superbuy** projekt teljes technikai dokumentációját, konfigurációs fájljait és hálózati terveit.
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-1.2-blue?style=for-the-badge)
+![Category](https://img.shields.io/badge/Project-Network--Infrastucture-orange?style=for-the-badge)
 
-## 📌 Gyorslinkek a Dokumentációhoz
-* 📊 [Interaktív IP Címzési Táblázat (Google Sheets)](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing)
-* 📜 [Részletes Megvalósulási Dokumentáció (PDF/MD)](./DOKUMENTACIO.md)
+Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartalmazza. A hálózatot magas rendelkezésre állásra (HA), biztonságra és automatizált menedzsmentre terveztük.
 
 ---
 
-## ⚙️ Eszköz Konfigurációk (.txt)
-*Kattints az eszköz nevére a konfigurációs fájl megnyitásához:*
+### 📂 Gyors Navigáció
+> A legfontosabb dokumentumok és a laborállomány elérése.
 
-| Eszköz Típusa | Eszköz Neve | Konfigurációs Fájl |
+| Típus | Leírás | Elérés |
 | :--- | :--- | :--- |
-| **Fő Router** | Kp | [📄 Kp_config.txt](./Kp_config.txt) |
-| **Tartalék Router** | Kp_Backup | [🛡️ Kp_Backup_config.txt](./Kp_Backup_config.txt) |
-| **Tűzfal** | ASA | [🔥 ASA_config.txt](./ASA_config.txt) |
-| **Telephely** | Raktár | [📦 Raktar_config.txt](./Raktar_config.txt) |
-| **Telephely** | Logisztika | [🚛 Logisztika_config.txt](./Logisztika_config.txt) |
-| **Szolgáltató** | ISP | [🌐 ISP_config.txt](./ISP_config.txt) |
+| 🏗️ | **Packet Tracer Lab** | [Letöltés (.pkt)](./project/Superbuy_final.pkt) |
+| 📊 | **IP Címzési Terv** | [Megnyitás Google Sheets-ben](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing) |
+| 📜 | **Műszaki Dokumentáció** | [DOKUMENTACIO.md megtekintése](./docs/DOKUMENTACIO.md) |
+| 🤖 | **Ansible Útmutató** | [Letöltés (.docx)](./ansible_potencialis.docx) |
 
 ---
 
-## 🛠️ Alkalmazott Technológiák
-- **HA (High Availability):**
-- **Routing:** OSPFv2
-- **VPN:** GRE  Site-to-Site Tunnelek
-- **Biztonság:** Cisco ASA tűzfal, ACL szűrés
-- **Automatizáció:** [Ansible](./Ansible_Dokumentacio.docx) szkriptek a menedzsmenthez
+### ⚙️ Eszköz Konfigurációk
+*A hálózati eszközök mentett állományai a `/configs` mappában találhatóak.*
+
+<details>
+<summary><b>▶ Kattints ide a konfigurációs fájlok listájához</b></summary>
+
+* 🚀 **Fő Router (Kp):** [`Kp_config.txt`](./configs/Kp_config.txt)
+* 🛡️ **Tartalék Router (Kp_Backup):** [`Kp_Backup_config.txt`](./configs/Kp_Backup_config.txt)
+* 🔥 **ASA Tűzfal:** [`ASA_config.txt`](./configs/ASA_config.txt)
+* 📦 **Raktár:** [`Raktar_config.txt`](./configs/Raktar_config.txt)
+* 🚛 **Logisztika:** [`Logisztika_config.txt`](./configs/Logisztika_config.txt)
+* 🌐 **ISP:** [`ISP_config.txt`](./configs/ISP_config.txt)
+
+</details>
+
 ---
-*Készült a hálózati szakmai vizsgához - 2026*
 
+### 🛠️ Alkalmazott Technológiák
+- **HA (High Availability):** `HSRP` redundancia az alapértelmezett átjáróhoz.
+- **Routing:** Dinamikus `OSPFv2` útvonalválasztás.
+- **VPN:** `GRE` Site-to-Site tunnelek a telephelyek között.
+- **Biztonság:** Cisco `ASA` tűzfal és `ACL` szűrés.
+- **Automatizáció:** `Ansible` alapú menedzsment dokumentáció.
 
-
-
+---
+<p align="center">
+  <i>Készült a hálózati szakmai vizsgához - 2026</i><br>
+  <b>Superbuy Project Team</b>
+</p>
