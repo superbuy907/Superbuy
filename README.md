@@ -23,9 +23,6 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 ### ⚙️ Eszköz Konfigurációk
 *A hálózati eszközök mentett állományai a `/configs` mappában találhatóak.*
 
-<details>
-<summary><b>▶ Kattints ide a konfigurációs fájlok listájához</b></summary>
-
 * 🚀 **Fő Router (Kp):** [Kp_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_config.txt)
 * 🛡️ **Tartalék Router (Kp_Backup):** [Kp_Backup_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_Backup_config.txt)
 * 🔥 **ASA Tűzfal:** [ASA_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ASA_config.txt)
@@ -33,7 +30,6 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 * 🚛 **Logisztika:** [Logisztika_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Logisztika_config.txt)
 * 🌐 **ISP:** [ISP_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ISP_config.txt)
 
-</details>
 
 ---
 
