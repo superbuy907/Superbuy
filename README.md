@@ -13,7 +13,7 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 
 | Típus | Leírás | Elérés |
 | :--- | :--- | :--- |
-| 🏗️ | **Packet Tracer Lab** | [📥 Letöltés (.pkt)](https://github.com/superbuy907/Superbuy/raw/main/project/maov5.pkt) |
+| 🏗️ | **Packet Tracer Lab** | [📥 Letöltés (.pkt)](https://github.com/superbuy907/Superbuy/raw/main/project/maov6.pkt) |
 | 📊 | **IP Címzési Terv** | [🔗 Megnyitás Google Sheets-ben](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing) |
 | 📜 | **Műszaki Dokumentáció** | [📄 Letöltés (.md)](https://github.com/superbuy907/Superbuy/raw/main/docs/DOKUMENTACIO.md) |
 | 🤖 | **Ansible Útmutató** | [📥 Letöltés (.docx)](https://github.com/superbuy907/Superbuy/raw/main/docs/Ansible_Dokumentacio.docx) |
