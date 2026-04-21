@@ -1,7 +1,7 @@
 # 🍏 Superbuy - Vállalati Hálózati Infrastruktúra
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-1.2-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-v6.2-blue?style=for-the-badge)
 ![Category](https://img.shields.io/badge/Project-Network--Infrastucture-orange?style=for-the-badge)
 
 Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartalmazza. A hálózatot magas rendelkezésre állásra (HA), biztonságra és automatizált menedzsmentre terveztük.
@@ -9,14 +9,14 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 ---
 
 ### 📂 Gyors Navigáció
-> A legfontosabb dokumentumok és a laborállomány elérése.
+> A legfontosabb dokumentumok és a laborállomány azonnali elérése.
 
 | Típus | Leírás | Elérés |
 | :--- | :--- | :--- |
-| 🏗️ | **Packet Tracer Lab** | [Letöltés (.pkt)](./project/maov5.pkt) |
-| 📊 | **IP Címzési Terv** | [Megnyitás Google Sheets-ben](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing) |
-| 📜 | **Műszaki Dokumentáció** | [DOKUMENTACIO.md megtekintése](./docs/DOKUMENTACIO.md) |
-| 🤖 | **Ansible Útmutató** | [Letöltés (.docx)](./docs/Ansible_Dokumentacio.docx) |
+| 🏗️ | **Packet Tracer Lab** | [📥 Letöltés (.pkt)](./project/maov5.pkt?raw=true) |
+| 📊 | **IP Címzési Terv** | [🔗 Megnyitás Google Sheets-ben](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing) |
+| 📜 | **Műszaki Dokumentáció** | [📄 Letöltés (.md)](./docs/DOKUMENTACIO.md?raw=true) |
+| 🤖 | **Ansible Útmutató** | [📥 Letöltés (.docx)](./docs/Ansible_Dokumentacio.docx?raw=true) |
 
 ---
 
@@ -26,12 +26,12 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 <details>
 <summary><b>▶ Kattints ide a konfigurációs fájlok listájához</b></summary>
 
-* 🚀 **Fő Router (Kp):** [`Kp_config.txt`](./configs/Kp_config.txt)
-* 🛡️ **Tartalék Router (Kp_Backup):** [`Kp_Backup_config.txt`](./configs/Kp_Backup_config.txt)
-* 🔥 **ASA Tűzfal:** [`ASA_config.txt`](./configs/ASA_config.txt)
-* 📦 **Raktár:** [`Raktar_config.txt`](./configs/Raktar_config.txt)
-* 🚛 **Logisztika:** [`Logisztika_config.txt`](./configs/Logisztika_config.txt)
-* 🌐 **ISP:** [`ISP_config.txt`](./configs/ISP_config.txt)
+* 🚀 **Fő Router (Kp):** [Kp_config.txt](./configs/Kp_config.txt?raw=true)
+* 🛡️ **Tartalék Router (Kp_Backup):** [Kp_Backup_config.txt](./configs/Kp_Backup_config.txt?raw=true)
+* 🔥 **ASA Tűzfal:** [ASA_config.txt](./configs/ASA_config.txt?raw=true)
+* 📦 **Raktár:** [Raktar_config.txt](./configs/Raktar_config.txt?raw=true)
+* 🚛 **Logisztika:** [Logisztika_config.txt](./configs/Logisztika_config.txt?raw=true)
+* 🌐 **ISP:** [ISP_config.txt](./configs/ISP_config.txt?raw=true)
 
 </details>
 
