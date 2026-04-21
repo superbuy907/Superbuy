@@ -1,14 +1,36 @@
-# Vállalati Hálózati Infrastruktúra és Automatizáció
+# 🍏 ALMA Projekt - Vállalati Hálózati Infrastruktúra
 
-***Hálózatunk tartalmazza a következő dolgokat*** 
+Ez a tároló tartalmazza az **ALMA** projekt teljes technikai dokumentációját, konfigurációs fájljait és hálózati terveit.
 
-* **Biztonság:** ASA Tűzfal és ACL szabályok.
-* **Redundancia:** GRE tunnelek és OSPF routing.
-* **Szolgáltatások:** DNS, HTTP, DHCP és AAA (RADIUS) központi címtár.
-* **Automatizáció:** Python alapú eszközkonfiguráció.
+## 📌 Gyorslinkek a Dokumentációhoz
+* 📊 [Interaktív IP Címzési Táblázat (Google Sheets)](https://docs.google.com/spreadsheets/d/1j0ZOi8yoD4XCJ0Lp27ss7KFE7-TcpVIwsYtHFDRWBNo/edit?usp=sharing)
+* 📜 [Részletes Megvalósulási Dokumentáció (PDF/MD)](./DOKUMENTACIO.md)
 
-***A hálózat felépítése***
+---
 
+## ⚙️ Eszköz Konfigurációk (.txt)
+*Kattints az eszköz nevére a konfigurációs fájl megnyitásához:*
+
+| Eszköz Típusa | Eszköz Neve | Konfigurációs Fájl |
+| :--- | :--- | :--- |
+| **Fő Router** | Kp | [📄 Kp_config.txt](./configs/Kp_config.txt) |
+| **Tartalék Router** | Kp_Backup | [🛡️ Kp_Backup_config.txt](./configs/Kp_Backup_config.txt) |
+| **Tűzfal** | ASA | [🔥 ASA_config.txt](./configs/ASA_config.txt) |
+| **Telephely** | Raktár | [📦 Raktar_config.txt](./configs/Raktar_config.txt) |
+| **Telephely** | Logisztika | [🚛 Logisztika_config.txt](./configs/Logisztika_config.txt) |
+| **Szolgáltató** | ISP | [🌐 ISP_config.txt](./configs/ISP_config.txt) |
+
+---
+
+## 🛠️ Alkalmazott Technológiák
+- **HA (High Availability):** HSRP (Hot Standby Router Protocol)
+- **Routing:** OSPFv2 (Open Shortest Path First)
+- **VPN:** GRE (Generic Routing Encapsulation) Site-to-Site Tunnelek
+- **Biztonság:** Cisco ASA tűzfal, ACL szűrés
+- **Automatizáció:** Python szkriptek a menedzsmenthez
+
+---
+*Készült a hálózati szakmai vizsgához - 2026*
 
 
 
