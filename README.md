@@ -27,7 +27,7 @@ Ez a tároló tartalmazza az **Superbuy** projekt teljes technikai dokumentáci�
 - **Routing:** OSPFv2
 - **VPN:** GRE  Site-to-Site Tunnelek
 - **Biztonság:** Cisco ASA tűzfal, ACL szűrés
-- **Automatizáció:** ![**Ansible**](./ansible potencialis.docx)szkriptek a menedzsmenthez
+- **Automatizáció:** !Ansible](./Ansible_Dokumentacio.docx)szkriptek a menedzsmenthez
 ---
 *Készült a hálózati szakmai vizsgához - 2026*
 
