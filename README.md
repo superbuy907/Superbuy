@@ -21,14 +21,18 @@ Ez a tároló a **Superbuy** projekt teljes technikai implementációját tartal
 ---
 
 ### ⚙️ Eszköz Konfigurációk
-*A hálózati eszközök mentett állományai a `/configs` mappában találhatóak.*
+> A hálózati eszközök mentett konfigurációs állományai a `/configs` mappából.
 
-* 🚀 **Fő Router (Kp):** [Kp_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_config.txt)
-* 🛡️ **Tartalék Router (Kp_Backup):** [Kp_Backup_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_Backup_config.txt)
-* 🔥 **ASA Tűzfal:** [ASA_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ASA_config.txt)
-* 📦 **Raktár:** [Raktar_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Raktar_config.txt)
-* 🚛 **Logisztika:** [Logisztika_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Logisztika_config.txt)
-* 🌐 **ISP:** [ISP_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ISP_config.txt)
+| Típus | Eszköz megnevezése | Elérés (Közvetlen letöltés) |
+| :--- | :--- | :--- |
+| 🚀 | **Fő Router (Kp)** | [📄 Kp_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_config.txt) |
+| 🛡️ | **Tartalék Router (Kp_Backup)** | [📄 Kp_Backup_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Kp_Backup_config.txt) |
+| 🔥 | **ASA Tűzfal** | [📄 ASA_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ASA_config.txt) |
+| 📦 | **Raktár Router** | [📄 Raktar_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Raktar_config.txt) |
+| 🚛 | **Logisztika Router** | [📄 Logisztika_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/Logisztika_config.txt) |
+| 🌐 | **ISP (Szolgáltató)** | [📄 ISP_config.txt](https://github.com/superbuy907/Superbuy/raw/main/configs/ISP_config.txt) |
+
+---
 
 
 ---
